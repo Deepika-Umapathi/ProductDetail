@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">ProductDetails</string>
+    <string name="samplereports">SampleReports</string>
+    <string name="productdetails">ProductDetails</string>
+    <string name="description">Description</string>
+    <string name="availablelanguages">AvailableLanguages</string>
+    <string name="pages">Pages</string>
+    <string name="pagesintext">PagesInText</string>
+    <string name="reporttype">ReportType</string>
+    <string name="authentic">Authentic</string>
+    <string name="remedies">Remedies</string>
+    <string name="vedic">Vedic</string>
+    <string name="price">Price</string>
+    <string name="discount">Discount</string>
+    <string name="appdiscount">AppDiscount</string>
+    <string name="coupondiscount">couponDiscount</string>
+    <string name="soldcount">soldcount</string>
+    <string name="avg">avg</string>
+</resources>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="orange">#F9AA33</color>
+    <color name="grey_bg">#F7F7F7</color>
+    <color name="blue_gray_blue_gray_700">#353e4d</color>
+    <color name="blue_gray_blue_gray_600">#4a5361</color>
+    <color name="blue_gray_blue_gray_500">#5e6776</color>
+    <color name="blue_gray_blue_gray_400">#848e9d</color>
+    <color name="blue_gray_blue_gray_300">#a8aebb</color>
+    <color name="blue_gray_blue_gray_200">#d3d6de</color>
+    <color name="blue_gray_blue_gray_100">#e8ebf2</color>
+    <color name="blue_gray_blue_gray_50">#f4f6fa</color>
+    <color name="primary_picton_blue_400">#8ec3f8</color>
+
+</resources>
