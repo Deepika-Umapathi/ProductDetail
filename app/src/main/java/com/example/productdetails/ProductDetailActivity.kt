@@ -74,8 +74,20 @@ class ProductDetailActivity : AppCompatActivity(), SampleReportAdapter.OnReportC
                 .into(imageTwo)
 
 
-            val sampleReports = listOf(product.sampleReports)
-            println("sampleReports -->>>>> $sampleReports")
+         //   val sampleReports = listOf(product.sampleReports)
+
+            val sampleReports = product.sampleReports.split(",").mapNotNull {
+                val parts = it.split(":", limit = 2)
+                println("sampleReports parts-->>>>>  $parts ")
+                if (parts.size == 2) parts[0].trim() to parts[1].trim() else {
+                    null
+                }
+
+
+            }
+             println("sampleReports -->>>>>   $sampleReports")
+
+
             val adapter = SampleReportAdapter(sampleReports, this@ProductDetailActivity)
             sampleReportsRecyclerview.adapter = adapter
             adapter.setOnReportClickListener(this@ProductDetailActivity)

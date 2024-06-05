@@ -11,7 +11,7 @@ import androidx.recyclerview.widget.RecyclerView
 import com.example.productdetails.databinding.SampleReportItemBinding
 import com.example.productdetails.entity.ProductEntity
 
-class SampleReportAdapter(private val sampleReports: List<String>, private val context: Context) : RecyclerView.Adapter<SampleReportAdapter.ViewHolder>()  {
+class SampleReportAdapter( private val sampleReports: List<Pair<String, String>>, private val context: Context) : RecyclerView.Adapter<SampleReportAdapter.ViewHolder>()  {
 
     private lateinit var binding: SampleReportItemBinding
 
@@ -32,11 +32,14 @@ class SampleReportAdapter(private val sampleReports: List<String>, private val c
     }
 
     override fun onBindViewHolder(holder: ViewHolder, position: Int) {
-        val reportData = sampleReports[position].split(",") // Split by comma 
 
-        val url = reportData[1].substringAfter(":")
+        val (language, url) = sampleReports[position]
+        holder.titleFolder.text = "$language: $url "
+       // val reportData = sampleReports[position].split(",") // Split by comma
 
-        holder.titleFolder.text = reportData.toString()
+      //  val url = reportData[1].substringAfter(":")
+
+       // holder.titleFolder.text = reportData.toString()
 
         holder.itemView.setOnClickListener {
             val intent = Intent(Intent.ACTION_VIEW, Uri.parse(url))
